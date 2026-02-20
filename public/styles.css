@@ -1,0 +1,135 @@
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    display:flex;
+    height:100vh;
+    background:#f7f7f8;
+}
+
+.sidebar {
+    width:260px;
+    background:#202123;
+    color:white;
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar h2 {
+    margin:0 0 15px 0;
+}
+
+.sidebar button {
+    padding:8px;
+    margin-bottom:10px;
+    background:#444654;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+#listaConversaciones div {
+    padding:8px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+#listaConversaciones div:hover {
+    background:#343541;
+}
+
+.chat {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+}
+
+#mensajes {
+    flex:1;
+    padding:20px;
+    overflow-y:auto;
+}
+
+.mensaje {
+    margin-bottom:15px;
+    padding:10px 15px;
+    border-radius:8px;
+    max-width:100%;
+}
+
+.usuario {
+    background:#d1e7dd;
+    align-self:flex-end;
+}
+
+.asistente {
+    background:#e2e3e5;
+    align-self:flex-start;
+}
+
+.input-area {
+    padding:30px;
+    background:white;
+}
+
+.input-area input {
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.modal {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content {
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+#bienvenidaCentral {
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:50px;
+    color:#666;
+    text-align:center;
+    max-width:500px;
+}
+
+.logout-btn {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+    background:#b02a37 !important;
+    color:white;
+    cursor:pointer;
+    border-radius:6px;
+    margin-bottom:10px;
+}
+
+.logout-btn:hover {
+    background:#842029;
+}
+
+.login-error {
+    color: #b02a37;
+    font-size: 14px;
+    min-height: 18px;
+}
